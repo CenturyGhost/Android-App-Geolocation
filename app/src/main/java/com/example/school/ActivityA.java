@@ -32,13 +32,6 @@ public class ActivityA extends AppCompatActivity {
         startActivityForResult(intent, REQUEST_CODE_B);
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUEST_CODE_B && resultCode == RESULT_OK) {
-            if (data != null && data.hasExtra("result")) {
-                String result = data.getStringExtra("result");
+
             }
-        }
-    }
-}
+
